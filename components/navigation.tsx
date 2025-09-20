@@ -71,9 +71,11 @@ export function Navigation() {
                 {item.name}
               </Link>
             ))}
-            <Button size="sm" className="ml-4">
-              Get Quote
-            </Button>
+            <Link href="/contact">
+              <Button size="sm" className="ml-4">
+                Get Quote
+              </Button>
+            </Link>
           </nav>
 
           {/* Mobile Navigation */}
@@ -96,7 +98,9 @@ export function Navigation() {
                     {item.name}
                   </Link>
                 ))}
-                <Button className="mt-4 w-full">Get Quote</Button>
+                <Link href="/contact" onClick={() => setIsOpen(false)}>
+                  <Button className="mt-4 w-full">Get Quote</Button>
+                </Link>
               </div>
             </SheetContent>
           </Sheet>

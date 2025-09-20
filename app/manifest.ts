@@ -10,17 +10,19 @@ export default function manifest(): MetadataRoute.Manifest {
     display: "standalone",
     background_color: "#ffffff",
     theme_color: "#22c55e",
-    icons: [
+    "icons": [
       {
-        src: "/images/josca-logo.png",
-        sizes: "192x192",
-        type: "image/png",
+        "src": "/web-app-manifest-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable"
       },
       {
-        src: "/images/josca-logo.png",
-        sizes: "512x512",
-        type: "image/png",
-      },
+        "src": "/web-app-manifest-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
     ],
   }
 }
